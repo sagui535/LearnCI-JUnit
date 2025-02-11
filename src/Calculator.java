@@ -16,6 +16,9 @@ public class Calculator {
 		if (a<b) {
 			result = a * b;
 		}else {
+			if (b == 0) {
+			throw new ArithmeticException("Division by 0 not allowed");
+			}
 			result = a/b;
 		}
 		return result;
